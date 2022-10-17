@@ -1,21 +1,28 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const BookContainer = styled.div`
-    min-width: 200px;
-    height: 300px;
-    margin: 20px;
-`
+  margin: 20px;
+  transition: all 0.2s ease;
+  &:hover {
+    transform: scale(1.02);
+  }
+`;
 
 export const BookImage = styled.div`
-    width: 100%;
-    height: 100%;
-    background-color: #3e586b;
-`
+  width: 200px;
+  height: 300px;
+  background-color: #3e586b;
+`;
 
 export const BookTitle = styled.div`
-    font-weight: bold;
-`
+  font-weight: bold;
+`;
 
 export const Author = styled.div`
-    font-size: 12px;
-`
+  font-size: 12px;
+  font-style: italic;
+`;
+
+export const Category = styled.div`
+  font-size: 12px;
+`;
